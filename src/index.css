@@ -15,4 +15,47 @@
   main {
     @apply grow;
   }
+
+  *,
+  *::after,
+  *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1260px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ProductList */
+
+
+  .cards:hover {
+    -webkit-box-shadow: 9px 16px 16px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 9px 16px 16px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 9px 16px 16px 3px rgba(34, 60, 80, 0.2);
+  }
+
+  .card__img:hover {
+    scale: 1.2;
+    transition: 1s ease;
+  }
 }
