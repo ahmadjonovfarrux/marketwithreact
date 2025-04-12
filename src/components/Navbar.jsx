@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  // const { cart } = useSelector((store) => store.cart);
+  // console.log(cart);
   return (
     <div>
       <div className="navbar bg-blue-950 pl-10 pr-10">
@@ -9,7 +12,7 @@ function Navbar() {
           NewMarket
         </Link>
         <nav className="text-white">
-          <ul>
+          <ul className="navbar__list">
             <li>
               <Link to="/">Home</Link>
             </li>
