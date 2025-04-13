@@ -21,7 +21,7 @@ function Product({ product }) {
   };
   return (
     <Link
-      className="m-1 cards flex flex-col items-center"
+      className="product m-1 cards flex flex-col items-center"
       to={`/product/${id}`}
     >
       <figure>
