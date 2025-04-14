@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  // const { cart } = useSelector((store) => store.cart);
-  // console.log(cart);
+  const { cart } = useSelector((store) => store.cart);
   return (
     <div>
       <div className="navbar bg-blue-950 pl-10 pr-10">

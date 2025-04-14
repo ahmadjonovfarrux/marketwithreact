@@ -8,7 +8,6 @@ function MainLayout() {
     <div>
       <Navbar />
       <main>
-        <Hero />
         <Outlet />
       </main>
       <Footer />
