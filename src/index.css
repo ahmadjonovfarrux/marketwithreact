@@ -93,12 +93,24 @@
   }
 
   .card__img:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: 1s ease;
   }
 
   /* Product */
   .product {
     border-radius: 12px;
+  }
+
+  /* Card */
+  .productCard__img {
+    max-width: 500px;
+    width: 100%;
+  }
+  @media (max-width: 880px) {
+    .product__card {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

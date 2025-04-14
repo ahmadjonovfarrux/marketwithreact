@@ -51,7 +51,7 @@ function Product({ product }) {
             ${(price - (price / 100) * discountPercentage).toFixed(2)}
           </button>
         </div>
-        <div onClick={handleBuy}>
+        <div onClick={handleBuy} className="flex items-center gap-2">
           {isAdded && (
             <>
               <button
@@ -60,7 +60,7 @@ function Product({ product }) {
               >
                 +
               </button>
-              <span>{isAdded.amount}</span>
+              <span className="text-xl">{isAdded.amount}</span>
               <button
                 onClick={() => dispatch(decrement(id))}
                 className="btn btn-outline btn-secondary"
